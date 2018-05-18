@@ -1,7 +1,6 @@
 from colors import colors
 from bs4 import BeautifulSoup
 import requests
-import sys
 
 # First have to go to the subreddit and click on the new weekly post
 response = requests.get("https://www.reddit.com/r/LosAngeles/", headers = {'User-agent': 'event bot 1.0'})
@@ -14,10 +13,7 @@ for i in range(len(a)):
         if (title != None and title.find("Totally Awesome Things To Do In Los Angeles") > 0):
             link_suffix = a[i].find("a").get('href')
 
-# else link is down, throw error
-if (link_suffix == None):
-    sys.exit('link url not available on site')
-
+# sometimes a returns NoneType, I am not sure why. My guess is that python is not fully waiting for the get to complete and uses the first thing it sees.
 url = 'https://www.reddit.com' + link_suffix + '.json'
 
 # Now that you have the link, parse the json.
