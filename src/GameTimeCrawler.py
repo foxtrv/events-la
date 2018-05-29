@@ -15,15 +15,15 @@ print (colors.red + "================ Collected from GameTime website - Sports =
 
 for i in range(len(b)):
     print(colors.green + "Event " + str(i+1) + ":" + colors.black)
-    eventName = b[i].find(class_="_3QpUIoSPLTS7PxcIALO8Re")
+    eventName = b[i].find(class_="_2YoFuNQ31DP1tGi7SJSx9L")
     if (eventName != None):
         print(eventName.text)
-    eventDate = b[i].find(class_="LIsmOmbzL4AwaITrZy_0N")
+    eventDate = b[i].find(class_="_2HXqS58qcLrerum_SzOdyb")
     if (eventDate != None):
-        eventDateActual = eventDate.find(class_="_2opqbRqujFoCFp0b6jZeMY")
+        eventDateActual = eventDate.find(class_="VCS8tleOdm6_4nFDSF_AC")
         if (eventDateActual != None):
             print(eventDateActual.text)
-        eventPrice = eventDate.find(class_="_2mZMUi21HU4ydbF4R-70DQ")
+        eventPrice = eventDate.find(class_="vhz-YnjOiZcynqmwAjbaE")
         if (eventPrice != None):
             print(eventPrice.text[7:]+"+")
     print()
@@ -45,23 +45,22 @@ print (colors.red + "================ Collected from GameTime website - Music/Co
 
 for i in range(len(b)):
     print(colors.green + "Event " + str(i+1) + ":" + colors.black)
-    eventName = b[i].find(class_="X47khF4xL4X-kF84-zkUQ container")
+    eventName = b[i].find(class_="_2YoFuNQ31DP1tGi7SJSx9L")
     if (eventName != None):
-        eventNameActual = eventName.find(class_="_30B4YbPIjfZuZ03--GRTyB")
-        eventLoc = eventName.find(class_="_3j0gTA8nYDiv1k6Lg0nJqV")
+        eventNameActual = eventName.find(class_="_3J1yVeOjo76PEdnHsjnCi6")
+        eventLoc = eventName.find(class_="_1QH5kZPjz42BSlnEVdkzT1")
         if (eventNameActual != None):
             print(eventNameActual.text)
         if (eventLoc != None):
             print(eventLoc.text)
-    eventDate = b[i].find(class_="LIsmOmbzL4AwaITrZy_0N")
+    eventDate = b[i].find(class_="_2HXqS58qcLrerum_SzOdyb")
     if (eventDate != None):
-        eventDateActual = eventDate.find(class_="_2opqbRqujFoCFp0b6jZeMY")
-        eventPrice = eventDate.find(class_="_2mZMUi21HU4ydbF4R-70DQ")
+        eventDateActual = eventDate.find(class_="VCS8tleOdm6_4nFDSF_AC")
+        eventPrice = eventDate.find(class_="vhz-YnjOiZcynqmwAjbaE")
         if (eventDateActual != None):
             print(eventDateActual.text)
         if (eventPrice != None):
             print(eventPrice.text[7:]+"+") # remove first 2 char from string in python. original string was "| from $.."
-
     print()
 
 
@@ -82,18 +81,18 @@ print (colors.red + "================ Collected from GameTime website - Shows/Th
 
 for i in range(len(b)):
     print(colors.green + "Event " + str(i+1) + ":" + colors.black)
-    eventName = b[i].find(class_="X47khF4xL4X-kF84-zkUQ container")
+    eventName = b[i].find(class_="_2YoFuNQ31DP1tGi7SJSx9L")
     if (eventName != None):
-        eventNameActual = eventName.find(class_="_30B4YbPIjfZuZ03--GRTyB")
-        eventLoc = eventName.find(class_="_3j0gTA8nYDiv1k6Lg0nJqV")
+        eventNameActual = eventName.find(class_="_3J1yVeOjo76PEdnHsjnCi6")
+        eventLoc = eventName.find(class_="_1QH5kZPjz42BSlnEVdkzT1")
         if (eventNameActual != None):
             print(eventNameActual.text)
         if (eventLoc != None):
             print(eventLoc.text)
-    eventDate = b[i].find(class_="LIsmOmbzL4AwaITrZy_0N")
+    eventDate = b[i].find(class_="_2HXqS58qcLrerum_SzOdyb")
     if (eventDate != None):
-        eventDateActual = eventDate.find(class_="_2opqbRqujFoCFp0b6jZeMY")
-        eventPrice = eventDate.find(class_="_2mZMUi21HU4ydbF4R-70DQ")
+        eventDateActual = eventDate.find(class_="VCS8tleOdm6_4nFDSF_AC")
+        eventPrice = eventDate.find(class_="vhz-YnjOiZcynqmwAjbaE")
         if (eventDateActual != None):
             print(eventDateActual.text)
         if (eventPrice != None):
