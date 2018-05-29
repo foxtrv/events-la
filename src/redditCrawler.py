@@ -5,7 +5,7 @@ import random
 randomNum = random.random()
 
 # First have to go to the subreddit and click on the new weekly post
-response = requests.get("https://www.reddit.com/r/LosAngeles/", headers = {'User-agent': 'event bot 1.0 .. random seed to thwart reddit API response rate' + str(randomNum)})
+response = requests.get("https://www.reddit.com/r/LosAngeles/", headers = {'User-agent': 'event bot 1.0 .. ' + str(randomNum)})
 soup = BeautifulSoup(response.text, "html.parser")
 a = soup.findAll(class_="thing")
 
